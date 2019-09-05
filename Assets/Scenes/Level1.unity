@@ -307,6 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4879624124628548803, guid: 41bd2dc9f35a64efc8f6405bcdfe4ced, type: 3}
   parent: {fileID: 1874257594}
+  scorePerHit: 12
 --- !u!1 &63234294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746,
@@ -327,6 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4879624124628548803, guid: 41bd2dc9f35a64efc8f6405bcdfe4ced, type: 3}
   parent: {fileID: 1874257594}
+  scorePerHit: 12
 --- !u!108 &170076734 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 2508672591481901442, guid: 25f2a1a22ce624963a91c004089b6906,
@@ -413,7 +415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9817a94cd57da453ea68d95127393b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerHit: 12
 --- !u!114 &414798917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4879624124628548803, guid: 41bd2dc9f35a64efc8f6405bcdfe4ced, type: 3}
   parent: {fileID: 1874257594}
+  scorePerHit: 12
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4879624124628548803, guid: 41bd2dc9f35a64efc8f6405bcdfe4ced, type: 3}
   parent: {fileID: 1874257594}
+  scorePerHit: 100
 --- !u!1 &1031257573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1029,12 @@ Transform:
   m_Father: {fileID: 732281115}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1257288035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1148868922711591050, guid: df3105154094b408684c622894168dbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 6585139908900082334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1260587278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
@@ -1046,6 +1055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4879624124628548803, guid: 41bd2dc9f35a64efc8f6405bcdfe4ced, type: 3}
   parent: {fileID: 1874257594}
+  scorePerHit: 12
 --- !u!1001 &1342786419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1504,6 +1514,12 @@ Transform:
   m_Father: {fileID: 732281115}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1938742050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6585139909636812138, guid: df3105154094b408684c622894168dbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 6585139908900082334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1862837644018301377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1855,6 +1871,38 @@ PrefabInstance:
     - target: {fileID: 4280232423131157334, guid: df3105154094b408684c622894168dbf,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592511821, guid: df3105154094b408684c622894168dbf, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592511821, guid: df3105154094b408684c622894168dbf, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1938742050}
+    - target: {fileID: 1592511821, guid: df3105154094b408684c622894168dbf, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1257288035}
+    - target: {fileID: 6585139909636812138, guid: df3105154094b408684c622894168dbf,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585139909636812138, guid: df3105154094b408684c622894168dbf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148868922711591050, guid: df3105154094b408684c622894168dbf,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148868922711591050, guid: df3105154094b408684c622894168dbf,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6655981070485468298, guid: df3105154094b408684c622894168dbf,

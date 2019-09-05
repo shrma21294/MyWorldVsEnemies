@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 	[Tooltip("In ms^-1")][SerializeField] float Speed = 10f;
 	[Tooltip("In m")][SerializeField] float xRange = 4.3f;
 	[Tooltip("In m")][SerializeField] float yRange = 3.5f;
+    [SerializeField] GameObject[] guns;
 
     [Header("Screen-position based")]
 	[SerializeField] float positionPitchFactor = -5f;
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
         {
              ProcessTranslation();
              ProcessRotation();
+             ProceedFiring();
         }
     }
 
@@ -73,5 +75,26 @@ public class Player : MonoBehaviour
 
     	transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
 
+    }
+
+    void ProceedFiring(){
+        if(CrossPlatformInputManager.GetAxis("Fire")>0)
+        {
+            ActivateGuns();
+        }else{
+            DeactivateGuns();
+        }
+    }
+
+    void ActivateGuns(){
+        foreach(GameObject gun in guns){
+            gun.SetActive(true);
+        }
+    }
+
+    void DeactivateGuns(){
+        foreach(GameObject gun in guns){
+            gun.SetActive(false);
+        }
     }
 }
